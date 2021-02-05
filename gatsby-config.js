@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `NateEagle.com`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Nate Eagle`,
+      summary: `I’m a proud dad, I write JavaScript, I make classic and exotic cocktails, I play go and tennis, and I work on projects.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `Nate Eagle’s project blog.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `neagle`,
     },
   },
   plugins: [
@@ -34,6 +34,19 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 630,
+            },
+          },
+          {
+            resolve: "gatsby-remark-video",
+            options: {
+              width: 800,
+              height: "auto",
+              preload: "auto",
+              muted: false,
+              autoplay: false,
+              playsinline: true,
+              controls: true,
+              loop: true,
             },
           },
           {

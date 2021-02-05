@@ -1,0 +1,5 @@
+Convert all HEIC Files after brew install imagemagick:
+magick mogrify -monitor -format jpg *.HEIC
+
+Convert mov files:
+for i (**/*.MOV(D)) ffmpeg -i $i -vcodec h264 -acodec mp2 ${i:r}.mp4
